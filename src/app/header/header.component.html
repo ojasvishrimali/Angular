@@ -1,0 +1,45 @@
+<p>
+  <mat-toolbar color="primary">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon></button
+    >&nbsp;&nbsp;
+    <div routerLink="/home">
+      <span><h1>Repo Hub</h1></span>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Search....." style="width: 500px" />
+    </div>
+    <div routerLink="/categories">
+      <span><h1>Categories</h1></span>
+    </div>
+  </mat-toolbar>
+
+  <mat-drawer-container class="example-container" autosize>
+    <mat-drawer opened="true" mode="side">
+      <mat-nav-list>
+        <mat-list-item>
+          <button mat-button routerLink="/testing">
+            Testing Frameworks and Tools
+          </button>
+        </mat-list-item>
+
+        <mat-list-item>
+          <button mat-button routerLink="/mocking">Mocking</button>
+        </mat-list-item>
+
+        <mat-list-item>
+          <button mat-button routerLink="/jdbc">JDBC Drivers</button>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div style="text-align: center; min-height: 600px">
+        <router-outlet></router-outlet>
+      </div>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</p>

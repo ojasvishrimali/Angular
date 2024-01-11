@@ -1,0 +1,35 @@
+.example-card {
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 20px rgb(225, 181, 246);
+  border-radius: 5px;
+}
+button {
+  font-weight: bold;
+  margin-left: 10px;
+}
+/* button {
+  margin-top: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  background-color: white;
+  border: 2px solid rgb(207, 157, 245);
+  border-radius: 15px;
+  padding: 10px;
+} */
+
+/* button:hover {
+  background-color: rgb(215, 163, 243);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+} */
+.example-list {
+  text-align: left;
+  margin-left: 10px;
+}
+/* .images {
+  float: left;
+} */
